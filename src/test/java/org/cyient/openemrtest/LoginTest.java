@@ -1,13 +1,12 @@
 package org.cyient.openemrtest;
 
 import org.cyient.basetest.WebdriverWrappertest;
+import org.cyient.utilities.DataProviderUtilies;
 import org.cyinet.pagetest.DashBoardPage;
 import org.cyinet.pagetest.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.cyient.utilities.DataProviderUtilies;
 
 public class LoginTest extends WebdriverWrappertest {
 	

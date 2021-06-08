@@ -1,4 +1,4 @@
-package com.cyient.utilities;
+package org.cyient.utilities;
 
 import org.testng.annotations.DataProvider;
 
