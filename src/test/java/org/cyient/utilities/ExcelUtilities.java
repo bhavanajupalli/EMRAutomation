@@ -26,6 +26,7 @@ public class ExcelUtilities {
 		System.out.println(cellCount);
 		
 		Object[][] main= new Object[rowCount-1][cellCount];
+		DataFormatter format = new DataFormatter();
 		
 		for(int r=1;r<rowCount;r++)
 		{
@@ -33,8 +34,7 @@ public class ExcelUtilities {
 			{
 				XSSFRow row= sheet.getRow(r);
 				XSSFCell cell= row.getCell(c);
-
-				DataFormatter format = new DataFormatter();
+	
 				String cellvalue= format.formatCellValue(cell);
 				System.out.println(cellvalue);
 				

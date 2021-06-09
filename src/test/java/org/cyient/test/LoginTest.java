@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends WebdriverWrappertest {
 	
 	
-	@Test(dataProvider="validCredentialData", dataProviderClass= DataProviderUtilies.class)
+	@Test(dataProvider="validCredentialExcelData", dataProviderClass= DataProviderUtilies.class)
 	public void validCredentialTest(String username,String password,String lang,String espectedValue) throws InterruptedException {
 		LoginPage page = new LoginPage(driver);
 		page.sendUsername(username);
@@ -34,7 +34,8 @@ public class LoginTest extends WebdriverWrappertest {
 		page.sendPassword(password);
 		page.selectLanguage(lang);
 		page.selectLogin();
-
+		page.getErrorText();
+		
 		Assert.assertEquals(page.getErrorText(), espectedValue);
 
 	}

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.cyient.openemrtest.LoginTest">
+      <class name="org.cyient.test.LoginTest">
         <methods>
+          <include name="validCredentialTest"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="invalidCredintialTest"/>
         </methods>
-      </class> <!-- org.cyient.openemrtest.LoginTest -->
+      </class> <!-- org.cyient.test.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
