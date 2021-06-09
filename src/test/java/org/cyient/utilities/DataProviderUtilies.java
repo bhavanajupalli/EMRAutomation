@@ -29,7 +29,7 @@ public class DataProviderUtilies {
 				XSSFCell cell= row.getCell(c);
 
 				DataFormatter format = new DataFormatter();
-				main[r][c]=format.formatCellValue(cell);
+				main[r-1][c]=format.formatCellValue(cell);
 				System.out.println(main[r][c]);
 			}
 		}
